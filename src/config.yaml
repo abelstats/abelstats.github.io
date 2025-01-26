@@ -1,5 +1,5 @@
 site:
-  name: Abel Barrios Córdova
+  name: Abel Data Scientist
   site: 'https://abelstats.github.io'
   base: '/'
   trailingSlash: false
@@ -9,23 +9,37 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: 'Abel Barrios Cordova'
+    template: '%s — Data Scientist & Analytics Expert'
+  description: 'Portafolio de Abel Barrios Cordova, especialista en Data Science, Data Analysis, Machine Learning y visualización avanzada de datos.'
   robots:
     index: true
     follow: true
-  openGraph:
-    site_name: AstroWind
+   openGraph:
+    site_name: 'Abel Barrios Portfolio'
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/abel_portfolio_cover.png'
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
+    # url: 'https://abelstats.github.io/'
+    # additional_repos:
+    #   - repo_name: 'machine-learning-projects'
+    #     repo_url: 'https://github.com/abel-barrios/machine-learning-projects'
+    #     image:
+    #       url: '~/assets/images/github_repo_ml.png'
+    #       width: 1200
+    #       height: 628
+    #   - repo_name: 'data-visualization-tools'
+    #     repo_url: 'https://github.com/abel-barrios/data-visualization-tools'
+    #     image:
+    #       url: '~/assets/images/github_repo_viz.png'
+    #       width: 1200
+    #       height: 628
+  linkedin:
+    handle: 'abel-barrios-cordova'
+    site: 'https://www.linkedin.com/in/abel-barrios-cordova/'
+    cardType: 'summary_large_image'
 
 i18n:
   language: en
