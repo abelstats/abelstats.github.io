@@ -4,25 +4,27 @@ site:
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: smHtyjN4pvrcYiJGtIkfQj0GxrjXhpfu7Bk5nNuSZWY
+
+  # Este es de astro googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
   title:
-    default: 'Abel Barrios Cordova'
+    default: Abel Barrios Cordova 
     template: '%s — Data Scientist & Analytics Expert'
-  description: 'Portafolio de Abel Barrios Cordova, especialista en Data Science, Data Analysis, Machine Learning y visualización avanzada de datos.'
+  description: "Portafolio de Abel Barrios Cordova, especialista en Data Science, Data Analysis, Machine Learning y visualización avanzada de datos."
   robots:
     index: true
     follow: true
-   openGraph:
-    site_name: 'Abel Barrios Portfolio'
+  openGraph:
+    site_name: Abel Barrios Cordova Portfolio
     images:
       - url: '~/assets/images/abel_portfolio_cover.png'
         width: 1200
         height: 628
     type: website
-    # url: 'https://abelstats.github.io/'
+    url: 'https://abelstats.github.io/'
     # additional_repos:
     #   - repo_name: 'machine-learning-projects'
     #     repo_url: 'https://github.com/abel-barrios/machine-learning-projects'
@@ -39,7 +41,7 @@ metadata:
   linkedin:
     handle: 'abel-barrios-cordova'
     site: 'https://www.linkedin.com/in/abel-barrios-cordova/'
-    cardType: 'summary_large_image'
+    cardType: summary_large_image
 
 i18n:
   language: en
