@@ -10,6 +10,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
+import Image from '~/components/common/Image.astro';
 
 const metadata = {
   title: 'Personal Homepage Demo',
@@ -43,14 +44,13 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    title="Abel Barrios"
+    tagline="Personal Web"
+    actions={[{ variant: 'primary', text: 'Contact me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
+      I´m a Business Analyst and Data Science Developer who turns your data into insights.
+      <br />Ask, prepare, process, analyze, share and act, which drive organizations to success.
     </Fragment>
   </Hero>
 
@@ -61,46 +61,57 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'tabler:brand-linkedin',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
-          href: '#',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/abel-barrios-cordova/',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'tabler:circle-letter-o',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
-          href: '#',
+          text: 'Orcid',
+          href: 'https://orcid.org/0000-0001-9671-9463',
         },
       },
       {
-        icon: 'tabler:brand-pinterest',
+        icon: 'tabler:brand-github',
         callToAction: {
           target: '_blank',
-          text: 'Pinterest',
-          href: '#',
+          text: 'Github',
+          href: 'https://github.com/abelstats/',
         },
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/abel.png',
+      alt: 'Abel FAM',
+      width: "80",
+      height: "100",
       loading: 'eager',
     }}
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        For as long as I can remember, numbers have been more than just figures to me: they have been a language, 
+        a way to communicate and make sense of the world. This passion naturally led me to study engineering, 
+        where I applied my analytical skills to practical problems. However, my journey did not end there. 
+        I discovered a deeper calling: sharing my enthusiasm for numbers through teaching. 
+        For over a decade, I had the privilege of teaching in high schools and universities, 
+        inspiring others to see the beauty and power of mathematics.
       </p>
+      Driven by a tireless curiosity and a desire for new challenges, I pursued a master's degree in statistics, 
+      which opened the doors to the world of data science. There, I found my true passion: 
+      uncovering hidden stories in data and solving complex problems that affect people in their professional and 
+      everyday lives.
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Today, my goal is simple yet impactful: translating data into meaningful insights and practical solutions. 
+        Whether through storytelling with numbers or tackling intricate challenges, 
+        I strive to make data not only accessible but transformative.
       </p>
       <br />
       <p>If you're curious to dive deeper into my work, you can follow me:</p>
