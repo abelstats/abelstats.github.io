@@ -82,8 +82,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      "G-HN99SNVLPE"
-      #id: null # or "G-XXXXXXXXXX"
+      id: 10197066312 or "G-HN99SNVLPE"
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
