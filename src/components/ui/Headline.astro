@@ -5,6 +5,7 @@ import { twMerge } from 'tailwind-merge';
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
+  subtitle2 = await Astro.slots.render('subtitle2'),
   tagline,
   classes = {},
 } = Astro.props;
@@ -17,7 +18,7 @@ const {
 ---
 
 {
-  (title || subtitle || tagline) && (
+  (title || subtitle || subtitle2 || tagline) && (
     <div class={twMerge('mb-8 md:mx-auto md:mb-12 text-center', containerClass)}>
       {tagline && (
         <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase" set:html={tagline} />
@@ -30,6 +31,7 @@ const {
       )}
 
       {subtitle && <p class={twMerge('mt-4 text-muted', subtitleClass)} set:html={subtitle} />}
+      {subtitle2 && <p class={twMerge('mt-4 text-muted', subtitleClass, 'text-xs')} set:html={subtitle2} />}
     </div>
   )
 }
