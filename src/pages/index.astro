@@ -5,12 +5,12 @@ import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 // import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features2.astro';
+//import Features3 from '~/components/widgets/Features2.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import Brands from '~/components/widgets/Brands.astro';
+//import Brands from '~/components/widgets/Brands.astro';
 //import FAQs from '~/components/widgets/FAQs.astro';
 //import Stats from '~/components/widgets/Stats.astro';
 //import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -163,57 +163,71 @@ const metadata = {
     classes={{ container: 'max-w-3xl' }}
   />
 
-  <!-- Features3 Widget ************** -->
 
-  <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
-      },
-      {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
-      },
-      {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-      {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
-      },
-      {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
-      },
-      {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
-      },
-    ]}
-  />
+<!-- Features Widget SKILLS *************** -->
+
+<Features
+id="Skills"
+title="Skills"
+subtitle="Extract insights from complex data sets using advanced statistical methods, machine learning, and data visualization tools to drive data-driven decision making."
+columns={3}
+items={[
+  {
+    title: 'Excel',
+    description:
+      'Pivot tables, macros, formulas.',
+    icon: 'tabler:file-spreadsheet',
+  },
+  {
+    title: 'SQL',
+    description: 'Basic and advanced queries.',
+    icon: 'tabler:sql',
+  },
+  {
+    title: 'Python',
+    description:
+      'Pandas, matplotlib, numpy, scikit-learn, TensorFlow, PyTorch, etc.',
+    icon: 'tabler:brand-python',
+  },
+  {
+    title: 'R & R Studio',
+    description: 'dplyr, ggplot2, gbm, caret, etc.',
+    icon: 'tabler:brand-revolut',
+  },
+  {
+    title: 'Git & GitHub',
+    description:
+      'Version control.',
+    icon: 'tabler:brand-github',
+  },
+  {
+    title: 'Power BI & Tableau',
+    description: 'Interactive Dashboards.',
+    icon: 'tabler:presentation',
+  },
+  {
+    title: 'Machine Learning',
+    description: 'Supervised and unsupervised models.',
+    icon: 'tabler:brand-metabrainz',
+  },
+  {
+    title: 'Deep Learning',
+    description: 'Neural networks, image processing, NLP.',
+    icon: 'tabler:brain',
+  },
+  {
+    title: 'Math & Stats',
+    description: 'Advanced statistics, probability, Linear Algebra, Optimization.',
+    icon: 'tabler:math-max',
+  },
+]}
+/>
+
 
   <!-- Content Widget **************** -->
 
   <Content
-    id="porfolio"
+    id="portfolio"
     title="Elevating visual narratives"
     subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
     isReversed
@@ -329,52 +343,6 @@ const metadata = {
   </Content>
 
 
-
-<!-- Features Widget *************** -->
-
-  <Features
-    id="features"
-    title="Main features of our templates"
-    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
-    columns={3}
-    items={[
-      {
-        title: 'Modern and Professional Design',
-        description:
-          'Have a contemporary design that reflects current design trends and gives a professional impression.',
-        icon: 'tabler:artboard',
-      },
-      {
-        title: 'Responsive and Mobile-Friendly',
-        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
-        icon: 'tabler:picture-in-picture',
-      },
-      {
-        title: 'Customizability',
-        description:
-          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
-        icon: 'tabler:adjustments-horizontal',
-      },
-      {
-        title: 'Fast Loading Times',
-        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Compatibility',
-        description: 'The templates work seamlessly across various content management systems and website builders.',
-        icon: 'tabler:plug-connected',
-      },
-    ]}
-  />
-
-
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
@@ -452,55 +420,5 @@ information={`Dive into a realm of design wisdom and creative inspiration, where
   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
 </Fragment>
 </BlogLatestPosts>
-
-
-  <!-- Brands Widget ****************** -->
-
-  <Brands
-    title="Sotware"
-    subtitle="Solving challenges with cutting-edge tools."
-    subtitle2= "Microsoft and its logos are registered trademarks of Microsoft Corporation. <br /> Microsoft programs are only used as part of my professional tools. <br /> This website is not affiliated with or endorsed by Microsoft."
-
-    icons={[]}
-    images={[
-      {
-        src: '~/assets/images/python.png',
-        alt: 'Python',        
-      },
-      {
-        src: '~/assets/images/r_software.png',
-        alt: 'R Software',
-      },
-      {
-        src: '~/assets/images/r_studio2.png',
-        alt: 'R Studio',
-      },
-      {
-        src: '~/assets/images/mysql.png',
-        alt: 'My',
-      },
-      {
-        src: '~/assets/images/SQLite.png',
-        alt: 'SQLite',
-      },
-      {
-        src: '~/assets/images/excel.png',
-        alt: 'E',
-      },
-      {
-        src: '~/assets/images/power_bi2.png',
-        alt: 'p',
-      },
-      {
-        src: '~/assets/images/vs_code.png',
-        alt: 'vs',
-      },
-      {
-        src: '~/assets/images/github.png',
-        alt: 'GitHub',
-      },
-    ]}
-    
-  />
 
 </Layout>
