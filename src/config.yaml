@@ -82,7 +82,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: 10197066312 or G-HN99SNVLPE
+      id: G-HN99SNVLPE
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
